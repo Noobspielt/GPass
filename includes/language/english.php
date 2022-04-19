@@ -806,6 +806,7 @@ return array(
     'settings_kb' => 'Knowledge base feature',
     'settings_kb_tip' => 'Adds a menu item to access the knowledge base feature. The knowledge base is a searchable FAQ, allowing you create help and notes, and attach them to password items.',
     'settings_ldap_domain' => 'LDAP account suffix for your domain',
+    'settings_ldap_domain_tip' => 'e.g @example.com',
     'settings_ldap_domain_controler' => 'LDAP domain controller(s)',
     'settings_ldap_domain_controler_tip' => 'Specify domain controller providing the directory services. To balance queries among multiple servers, input a comma-delimited list of each server name. Example: domain_1,domain_2,domain_3',
     'settings_ldap_domain_dn' => 'LDAP base DN for your domain',

@@ -1050,10 +1050,12 @@ function authenticateThroughAD(string $username, array $userInfo, string $passwo
             LDAP_OPT_X_TLS_REQUIRE_CERT => LDAP_OPT_X_TLS_HARD,
         ],
     ];
-    if ($SETTINGS['ldap_type'] === 'ActiveDirectory') {
-        $config['username'] = $username;
-    }
 
+### More bugfixes to make LDAP Possible (dsc)
+    if ($SETTINGS['ldap_type'] === 'ActiveDirectory') {
+        $config['username'] = $username.$SETTINGS['ldap_domain'];
+    }
+### End of Bugfixes
     // Load expected libraries
     require_once $SETTINGS['cpassman_dir'] . '/includes/libraries/Illuminate/Contracts/Auth/Authenticatable.php';
     require_once $SETTINGS['cpassman_dir'] . '/includes/libraries/Tightenco/Collect/Support/Traits/EnumeratesValues.php';

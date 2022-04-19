@@ -213,6 +213,17 @@ $ldap_type = $SETTINGS['ldap_type'] ?? '';
                                         <input type='text' class='form-control form-control-sm setting-ldap' id='ldap_user_object_filter' value='<?php echo $SETTINGS['ldap_user_object_filter'] ?? ''; ?>'>
                                     </div>
                                 </div>
+                                <div class='row mb-2 tr-ldap'>
+                                    <div class='col-5'>
+                                        <?php echo langHdl('settings_ldap_domain'); ?>
+                                        <small id='passwordHelpBlock' class='form-text text-muted'>
+                                            <?php echo langHdl('settings_ldap_domain_tip'); ?>
+                                        </small>
+                                    </div>
+                                    <div class='col-7'>
+                                        <input type='text' class='form-control form-control-sm setting-ldap' id='ldap_domain' value='<?php echo $SETTINGS['ldap_domain'] ?? ''; ?>'>
+                                    </div>
+                                </div>
 
                                 <div class='row mb-2'>
                                     <div class='col-5'>

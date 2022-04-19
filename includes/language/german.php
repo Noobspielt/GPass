@@ -785,7 +785,8 @@ return array(
     'settings_default_language' => 'Standardsprache definieren',
     'settings_kb' => 'Wissensdatenbank aktivieren (beta)',
     'settings_kb_tip' => 'Durch Aktivierung dieser Option wird eine zusätzliche Seite hinzugefügt, auf der Sie Ihre Wissensdatenbank aufbauen können.',
-    'settings_ldap_domain' => 'LDAP Suffix Ihrer Domäne',
+    'settings_ldap_domain' => 'LDAP Suffix Ihrer Domäne'
+    'settings_ldap_domain_tip' => 'z.b domain.de',
     'settings_ldap_domain_controler' => 'LDAP Serverliste',
     'settings_ldap_domain_controler_tip' => 'Geben Sie mehrere Server an, falls Sie die Verteilung der LDAP-Anfragen auf mehrere Server wünschen. Sie müssen die Domänennamen durch Kommazeichen trennen ( , ). Bsp.: domain_1,domain_2,domain_3',
     'settings_ldap_domain_dn' => 'LDAP Base DN Ihrer Domäne',
