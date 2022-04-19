@@ -18,7 +18,7 @@
  */
 define('TP_VERSION', '3.0.0');
 define('TP_VERSION_FULL', TP_VERSION.'.17');
-define('TP_TOOL_NAME', 'Teampass');
+define('TP_TOOL_NAME', 'GPass');
 define('TP_ONE_DAY_SECONDS', 86400);
 define('TP_ONE_WEEK_SECONDS', 604800);
 define('TP_ONE_MONTH_SECONDS', 2592000);
@@ -51,7 +51,7 @@ define('TP_PW_STRENGTH_5', 60);
 
 define('READTHEDOC_URL', 'https://teampass.readthedocs.io/en/latest/');
 define('REDDIT_URL', 'https://www.reddit.com/r/TeamPass/');
-define('TEAMPASS_URL', 'https://teampass.net');
+define('TEAMPASS_URL', 'https://github.com/Noobspielt/GPass');
 
 define('DEBUG', false);
 define('DEBUGLDAP', false); //Can be used in order to debug LDAP authentication
