@@ -49,7 +49,7 @@ define('TP_PW_STRENGTH_3', 38);
 define('TP_PW_STRENGTH_4', 48);
 define('TP_PW_STRENGTH_5', 60);
 
-define('READTHEDOC_URL', 'https://teampass.readthedocs.io/en/latest/');
+define('READTHEDOC_URL', 'https://documentation.teampass.net/');
 define('REDDIT_URL', 'https://www.reddit.com/r/TeamPass/');
 define('TEAMPASS_URL', 'https://github.com/Noobspielt/GPass');
 
