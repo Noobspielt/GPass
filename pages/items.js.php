@@ -3752,11 +3752,12 @@ $var['hidden_asterisk'] = '<i class="fas fa-asterisk mr-2"></i><i class="fas fa-
             prevIdForNextItem = -1;
 
         // Manage store
-        if (store.get('teampassApplication').itemsList === '' || store.get('teampassApplication').itemsList === undefined) {
-            var stored_datas = listOfItems;
-        } else {
-            var stored_datas = JSON.parse(store.get('teampassApplication').itemsList).concat(listOfItems);
-        }
+if (store.get('teampassApplication').itemsList === '' || store.get('teampassApplication').itemsList === undefined) {
+    var stored_datas = listOfItems;
+} else {
+    var stored_datas = [JSON.parse(store.get('teampassApplication').itemsList)].concat(listOfItems);
+}
+
         store.update(
             'teampassApplication',
             function(teampassApplication) {

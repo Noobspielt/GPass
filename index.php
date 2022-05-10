@@ -223,7 +223,7 @@ if (array_key_exists($get['page'], $utilitiesPages) === true) {
     <meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Teampass</title>
+    <title>Galias Passwort Safe</title>
     <script type='text/javascript'>
         //<![CDATA[
         if (window.location.href.indexOf('page=') === -1 &&
@@ -444,7 +444,8 @@ if (($session_validite_pw === null
     */
 
     if ($session_user_admin === 0) {
-        echo '
+  
+/*	echo '
                     <li class="nav-item">
                         <a href="#" data-name="search" class="nav-link', $get['page'] === 'search' ? ' active' : '', '">
                         <i class="nav-icon fas fa-search"></i>
@@ -453,7 +454,8 @@ if (($session_validite_pw === null
                         </p>
                         </a>
                     </li>';
-    }
+*/
+}
 
     // Favourites menu
     if (

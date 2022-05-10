@@ -2449,14 +2449,32 @@ if (null !== $post_type) {
             $teampassRoles = array();
             $adUsedAttributes = array('dn', 'mail', 'givenname', 'samaccountname', 'sn', $SETTINGS['ldap_user_attribute'], 'memberof', 'name', 'displayname', 'cn', 'shadowexpire');
 
+#### Bugfixes to make LDAP working (dsc)
             $users = $connection->query()->where([
                 ['objectclass', '=', 'top'],
                 ['objectclass', '=', 'person'],
                 ['objectclass', '=', 'organizationalperson'],
                 ['objectclass', '=', 'inetorgperson'],
-                ['objectclass', '=', 'posixaccount'],
-            ], null, null, 'or')->get();
-            
+               ['objectclass', '=', 'posixaccount'],
+           ], null, null, 'or')->get();
+
+#           if(isset($SETTINGS['ldap_user_object_filter']) && !empty($SETTINGS['ldap_user_object_filter'])) {
+#				$users = $connection->query()->rawFilter($SETTINGS['ldap_user_object_filter'])->get();
+#			} else {
+#				$users = $connection->query()->where([
+#					['objectclass', '=', 'top'],
+#					['objectclass', '=', 'person'],
+#					['objectclass', '=', 'organizationalperson'],
+#					['objectclass', '=', 'inetorgperson'],
+#					['objectclass', '=', 'posixaccount'],
+#				], null, null, 'or')->get();
+#			}
+
+
+ ##### Bugfixes End
+
+
+           
             foreach($users as $i => $adUser) {
                 if (isset($adUser[$SETTINGS['ldap_user_attribute']]) === false) continue;
                 
