@@ -445,7 +445,7 @@ if (($session_validite_pw === null
 
     if ($session_user_admin === 0) {
   
-	echo '
+/*	echo '
                     <li class="nav-item">
                         <a href="#" data-name="search" class="nav-link', $get['page'] === 'search' ? ' active' : '', '">
                         <i class="nav-icon fas fa-search"></i>
@@ -454,7 +454,7 @@ if (($session_validite_pw === null
                         </p>
                         </a>
                     </li>';
-
+*/
 }
 
     // Favourites menu
