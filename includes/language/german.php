@@ -681,6 +681,7 @@ return array(
     'complex_level6' => 'p3rf3kt!',
     'confirm' => 'Bestätigen',
     'confirm_del_from_fav' => 'Bitte bestätigen Sie die Löschung des Favoriten',
+    'connection'=> 'Anmeldung',
     'connections' => 'Verbindungen',
     'copy' => 'Kopieren',
     'copy_to_clipboard_small_icons' => 'Kleine Symbole bei Kopieren in Zwischenspeicher aktivieren',
