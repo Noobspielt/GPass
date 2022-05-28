@@ -2433,16 +2433,6 @@ if (null !== $post_type) {
                 break;
             }
 
-            /*
-            $groups = $connection->query()->where([
-                ['objectclass', '=', 'top'],
-                ['objectclass', '=', 'groupofuniquenames'],
-                ['objectclass', '=', 'groupofnames'],
-                ['objectclass', '=', 'organizationalunit'],
-                ['objectclass', '=', 'posixGroup'],
-            ])->get();
-            print_r($groups);
-            */
 
             $adRoles = array();
             $adUsersToSync = array();
@@ -2458,17 +2448,6 @@ if (null !== $post_type) {
                ['objectclass', '=', 'posixaccount'],
            ], null, null, 'or')->get();
 
-#           if(isset($SETTINGS['ldap_user_object_filter']) && !empty($SETTINGS['ldap_user_object_filter'])) {
-#				$users = $connection->query()->rawFilter($SETTINGS['ldap_user_object_filter'])->get();
-#			} else {
-#				$users = $connection->query()->where([
-#					['objectclass', '=', 'top'],
-#					['objectclass', '=', 'person'],
-#					['objectclass', '=', 'organizationalperson'],
-#					['objectclass', '=', 'inetorgperson'],
-#					['objectclass', '=', 'posixaccount'],
-#				], null, null, 'or')->get();
-#			}
 
 
  ##### Bugfixes End
